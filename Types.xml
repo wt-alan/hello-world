@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Types>
+    <AttackType name="攻击类型" translate="false">
+        <Type defaultAtk="" defaultDef="SkillEffect/TX025.swf" ident="0" name="普通攻击"/>
+        <Type defaultAtk="" defaultDef="SkillEffect/TX025.swf" ident="1" name="技能攻击"/>
+    </AttackType>
+    <AttackQuotiety name="进攻系数" translate="false">
+        <Type color="0xf20000" ident="0" max="3.20" min="2.10" name="S"/>
+        <Type color="0xff4a1e" ident="1" max="2.10" min="1.80" name="A"/>
+        <Type color="0xff9146" ident="2" max="1.80" min="1.50" name="B"/>
+        <Type color="0xfdc502" ident="3" max="1.50" min="1.20" name="C"/>
+        <Type color="0xffff00" ident="4" max="1.20" min="1.00" name="D"/>
+        <Type color="0xffff99" ident="5" max="1.00" min="0" name="E"/>
+        <Type color="0x9900ff" ident="6" max="1000" min="3.20" name="SS"/>
+    </AttackQuotiety>
+    <RecoveryQuotiety name="防御系数" translate="false">
+        <Type color="0xf20000" ident="0" max="1000" min="0.8" name="S"/>
+        <Type color="0xff4a1e" ident="1" max="0.8" min="0.65" name="A"/>
+        <Type color="0xff9146" ident="2" max="0.65" min="0.50" name="B"/>
+        <Type color="0xfdc502" ident="3" max="0.50" min="0.35" name="C"/>
+        <Type color="0xffff00" ident="4" max="0.35" min="0.20" name="D"/>
+        <Type color="0xffff99" ident="5" max="0.20" min="0" name="E"/>
+    </RecoveryQuotiety>
+    <AttackCount name="攻击值" translate="true">
+        <Type color="0xC0C0C0" ident="1" maxAttackCount="-51" minAttackCount="-2147483647" name="惨不忍睹" protectMinute="86400"/>
+        <Type color="0xFFFFFF" ident="2" maxAttackCount="-1" minAttackCount="-50" name="弱不禁风" protectMinute="5400"/>
+        <Type color="0xFFFFFF" ident="3" maxAttackCount="10" minAttackCount="0" name="普通" protectMinute="3600"/>
+        <Type color="0x33ccff" ident="4" maxAttackCount="20" minAttackCount="11" name="面目狰狞" protectMinute="3000"/>
+        <Type color="0x33ccff" ident="5" maxAttackCount="35" minAttackCount="21" name="凶神恶煞" protectMinute="2400"/>
+        <Type color="0x66ff33" ident="6" maxAttackCount="50" minAttackCount="36" name="穷凶极恶" protectMinute="1800"/>
+        <Type color="0xffff00" ident="7" maxAttackCount="70" minAttackCount="51" name="罪大恶极" protectMinute="1200"/>
+        <Type color="0xff5226" ident="8" maxAttackCount="100" minAttackCount="71" name="十恶不赦" protectMinute="720"/>
+        <Type color="0x9859ff" ident="9" maxAttackCount="2147483647" minAttackCount="100" name="天理难容" protectMinute="480"/>
+    </AttackCount>
+    <PrestigePay name="威望花费" translate="false">
+        <Type ident="1" min="800000" name="试炼塔鼓舞" value="200"/>
+    </PrestigePay>
+    <GoldPay name="金币花费" translate="false">
+        <Type ident="1" name="购买军令" value="20"/>
+        <Type ident="2" name="购买建筑队列" value="50"/>
+        <Type ident="3" name="强攻最少花费" value="6"/>
+        <Type ident="4" name="强攻每次增加" value="2"/>
+        <Type ident="5" name="每日任务刷新" value="10"/>
+        <Type ident="6" name="金币突飞上限" value="10"/>
+        <Type ident="7" name="继续闯塔花费" value="20"/>
+        <Type ident="8" name="强行闯塔花费" value="50"/>
+        <Type ident="9" name="团战鼓舞" value="2"/>
+        <Type ident="10" name="试炼塔鼓舞" value="1"/>
+        <Type ident="11" name="加强巡逻" value="10"/>
+        <Type ident="12" name="国战技能" value="20"/>
+        <Type ident="13" name="增加10个武将位" value="1000"/>
+        <Type ident="14" name="国战鼓舞" value="1"/>
+        <Type ident="15" name="国政注资" value="2"/>
+        <Type ident="16" name="祈风" value="5"/>
+        <Type ident="17" name="登录双倍奖励" value="20"/>
+        <Type ident="18" name="登录三倍奖励" value="50"/>
+        <Type ident="19" name="购买商人" value="20"/>
+        <Type ident="20" name="祈祷" value="10"/>
+        <Type ident="21" name="庇护" value="10"/>
+        <Type ident="22" name="争夺战鼓舞" value="2"/>
+        <Type ident="23" name="知己高级寻访" value="20"/>
+        <Type ident="24" name="学业重修" value="50"/>
+        <Type ident="25" name="学堂刷新项目" value="20"/>
+        <Type ident="26" name="再增加10个武将位" value="1000"/>
+        <Type ident="27" name="离婚" value="200"/>
+        <Type ident="28" name="探险扫荡" value="5"/>
+        <Type ident="29" name="属性重修" value="2000"/>
+        <Type ident="30" name="技能重修" value="500"/>
+        <Type ident="31" name="更换主公头像" value="20"/>
+        <Type ident="32" name="困难副本NPC重置" value="20"/>
+        <Type ident="33" name="好聚好散" value="700"/>
+        <Type ident="34" name="咫尺天涯" value="100"/>
+    </GoldPay>
+    <MaxLimit name="上限/系数" translate="false">
+        <Type ident="1" name="银币基础值" value="30000000"/>
+        <Type ident="2" name="银币上限系数" value="200000"/>
+        <Type ident="3" name="军令上限" value="1000"/>
+        <Type ident="4" name="默认建筑队列" value="2"/>
+        <Type ident="5" name="酒馆会谈最大次数" value="6"/>
+        <Type ident="6" name="强化加金币最大值" value="5"/>
+        <Type ident="7" name="每级粮食交易上限系数" value="4000"/>
+        <Type ident="8" name="战功换威望系数" value="20"/>
+        <Type ident="9" name="军团创建费用" value="2000"/>
+        <Type ident="10" name="征兵花费粮食" value="0.25"/>
+        <Type ident="11" name="突飞经验系数" value="1200"/>
+        <Type ident="12" name="突飞花费战功系数" value="10"/>
+        <Type ident="13" name="武将升级经验系数" value="120"/>
+        <Type ident="14" name="团战鼓舞上限" value="10"/>
+        <Type ident="15" name="试炼塔鼓舞上限" value="5"/>
+        <Type ident="16" name="粮食上限系数" value="150000"/>
+        <Type ident="17" name="兵营上限系数" value="45000"/>
+        <Type ident="18" name="义兵系数" value="150"/>
+        <Type ident="19" name="港口仓库增加银币上限系数" value="1000000"/>
+        <Type ident="20" name="港口仓库增加粮食上限系数" value="150000"/>
+    </MaxLimit>
+    <CDGold name="秒CD金币(几分钟1金币)" translate="false">
+        <Type ident="0" max="120" name="建筑CD" value="10"/>
+        <Type ident="1" max="0" name="征收CD" value="10"/>
+        <Type ident="2" max="10" name="强化CD" value="2"/>
+        <Type ident="3" max="120" name="委派CD" value="10"/>
+        <Type ident="4" max="60" name="突飞CD" value="10"/>
+        <Type ident="5" max="0" name="科技CD" value="10"/>
+        <Type ident="6" max="0" name="军令CD" value="1"/>
+        <Type ident="7" max="0" name="生产CD" value="1"/>
+        <Type ident="25" max="0" name="海盗入侵CD" value="1"/>
+        <Type ident="30" max="120" name="另寻他人CD" value="5"/>
+        <Type ident="32" max="60" name="游历行动CD" value="10"/>
+        <Type ident="33" max="0" name="吞食天地派遣CD" value="10"/>
+        <Type ident="36" max="0" name="竞技场CD" value="10"/>
+    </CDGold>
+    <CityDevelop name="城池投资" translate="true">
+        <Type cost="5000" ident="0" name="500点" value="500"/>
+        <Type cost="10000" ident="1" name="1000点" value="1000"/>
+        <Type cost="20000" ident="2" name="2000点" value="2000"/>
+    </CityDevelop>
+    <Item name="装备类型" translate="true">
+        <Type costCoefficient="7" iconId="21002" ident="1" name="武器"/>
+        <Type costCoefficient="6" iconId="21004" ident="2" name="防具"/>
+        <Type costCoefficient="6.5" iconId="21005" ident="3" name="坐骑"/>
+        <Type costCoefficient="6.5" iconId="21006" ident="4" name="兵书"/>
+        <Type costCoefficient="5" iconId="21001" ident="5" name="披风"/>
+        <Type costCoefficient="5" iconId="21003" ident="6" name="盾牌"/>
+        <Type costCoefficient="5" iconId="21007" ident="7" name="宝物"/>
+        <Type costCoefficient="5" iconId="21007" ident="8" name="单挑武器"/>
+        <Type costCoefficient="5" iconId="21007" ident="9" name="单挑宝物"/>
+        <Type costCoefficient="5" iconId="21007" ident="10" name="单挑铠甲"/>
+        <Type costCoefficient="5" iconId="21001" ident="101" name="宝箱"/>
+        <Type costCoefficient="5" iconId="21001" ident="102" name="铸造材料"/>
+    </Item>
+    <ItemQuality name="装备品质" translate="true">
+        <Type coef="1" color="0xffffff" ident="1" name="普通"/>
+        <Type coef="1" color="0x33ccff" ident="2" name="优良"/>
+        <Type coef="1" color="0x66ff33" ident="3" name="精良"/>
+        <Type coef="1" color="0xffff00" ident="4" name="史诗"/>
+        <Type coef="1" color="0xff3333" ident="5" name="传说"/>
+        <Type coef="1" color="0x9900ff" ident="6" jadeType="15" name="上古"/>
+        <Type coef="2" color="0xffcc00" ident="7" jadeType="16" name="太初"/>
+        <Type coef="4" color="0xff9933" ident="8" name="神皇"/>
+        <Type coef="4" color="0xff6600" ident="9" name="暗金"/>
+        <Type coef="6" color="0xff6666" ident="10" name="盘古"/>
+    </ItemQuality>
+    <Occupation name="职业" translate="true">
+        <Type ident="1" name="禁军" soldierId1="1" soldierId2="10" soldierNumIncrease="72"/>
+        <Type ident="2" name="雄师" soldierId1="1" soldierId2="11" soldierNumIncrease="64"/>
+        <Type ident="3" name="统领" soldierId1="1" soldierId2="12" soldierNumIncrease="60"/>
+        <Type ident="4" name="军师" soldierId1="1" soldierId2="13" soldierNumIncrease="56"/>
+        <Type ident="5" name="先锋" soldierId1="10" soldierId2="11" soldierNumIncrease="62"/>
+        <Type ident="6" name="元帅" soldierId1="10" soldierId2="12" soldierNumIncrease="60"/>
+        <Type ident="7" name="谋臣" soldierId1="10" soldierId2="13" soldierNumIncrease="50"/>
+        <Type ident="8" name="战将" soldierId1="11" soldierId2="12" soldierNumIncrease="52"/>
+        <Type ident="9" name="奇兵" soldierId1="11" soldierId2="13" soldierNumIncrease="50"/>
+        <Type ident="10" name="智将" soldierId1="12" soldierId2="13" soldierNumIncrease="48"/>
+        <Type ident="11" name="怪物" soldierNumIncrease="0"/>
+    </Occupation>
+    <Yield name="资源产量" translate="false">
+        <Type icon="MapIcon/ResIcon/zyt01.swf" ident="101" name="1级农田" value="900"/>
+        <Type icon="MapIcon/ResIcon/zyt02.swf" ident="102" name="2级农田" value="820"/>
+        <Type icon="MapIcon/ResIcon/zyt03.swf" ident="103" name="3级农田" value="740"/>
+        <Type icon="MapIcon/ResIcon/zyt03.swf" ident="104" name="3级农田" value="740"/>
+        <Type icon="MapIcon/ResIcon/zyt05.swf" ident="105" name="4级农田" value="640"/>
+        <Type icon="MapIcon/ResIcon/zyt05.swf" ident="106" name="4级农田" value="640"/>
+        <Type icon="MapIcon/ResIcon/zyt05.swf" ident="107" name="4级农田" value="640"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="108" name="5级农田" value="560"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="109" name="5级农田" value="560"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="110" name="5级农田" value="560"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="111" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="112" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="113" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="114" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="115" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="116" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="117" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="118" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="119" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyt08.swf" ident="120" name="6级农田" value="440"/>
+        <Type icon="MapIcon/ResIcon/zyk01.swf" ident="1" name="1级银矿" value="900"/>
+        <Type icon="MapIcon/ResIcon/zyk02.swf" ident="2" name="2级银矿" value="820"/>
+        <Type icon="MapIcon/ResIcon/zyk03.swf" ident="3" name="3级银矿" value="740"/>
+        <Type flip="0" icon="MapIcon/ResIcon/zyk03.swf" ident="4" name="3级银矿" value="740"/>
+        <Type icon="MapIcon/ResIcon/zyk04.swf" ident="5" name="4级银矿" value="640"/>
+        <Type flip="0" icon="MapIcon/ResIcon/zyk04.swf" ident="6" name="4级银矿" value="640"/>
+        <Type icon="MapIcon/ResIcon/zyk05.swf" ident="7" name="5级银矿" value="560"/>
+        <Type flip="0" icon="MapIcon/ResIcon/zyk05.swf" ident="8" name="5级银矿" value="560"/>
+    </Yield>
+    <TrainingTime name="训练时间" translate="true">
+        <Type cost="0" costType="1" ident="3" name="8小时" value="480" vip="0"/>
+        <Type cost="10000" costType="1" ident="4" name="24小时" value="1440" vip="0"/>
+        <Type cost="25" costType="2" ident="5" name="72小时" value="4320" vip="3"/>
+        <Type cost="50" costType="2" ident="6" name="168小时" value="10080" vip="8"/>
+    </TrainingTime>
+    <TrainingIntensity name="训练强度" translate="true">
+        <Type cost="0" costType="2" effect="1" ident="1" name="一般训练" vip="0"/>
+        <Type cost="10000" costType="1" effect="1.2" ident="2" name="严格训练" vip="0"/>
+        <Type cost="50000" costType="1" effect="1.5" ident="3" name="噩梦训练" vip="0"/>
+        <Type cost="100000" costType="1" effect="2" ident="4" name="地狱训练" vip="0"/>
+        <Type cost="10" costType="2" effect="3" ident="5" name="无双训练" vip="1"/>
+    </TrainingIntensity>
+    <BoostBuff name="团战鼓舞buff" translate="true">
+        <Type ident="1" name="连战" tooltip="增加2次连胜次数"/>
+        <Type ident="2" name="铁壁" tooltip="增加12%防御能力"/>
+        <Type ident="3" name="勇猛" tooltip="增加6%攻击与防御能力"/>
+        <Type ident="4" name="无畏" tooltip="增加12%攻击能力"/>
+    </BoostBuff>
+    <FeedBack name="聊天反馈信息" translate="true">
+        <Type ident="0" name=""/>
+        <Type ident="1" name="没人可接收"/>
+        <Type ident="2" name="玩家不在线"/>
+        <Type ident="3" name="玩家不存在"/>
+        <Type ident="4" name="没有反馈信息"/>
+        <Type ident="5" name="你已经被列入黑名单"/>
+        <Type ident="6" name="您发言过快，请休息一会"/>
+    </FeedBack>
+    <Guide name="新手指导" translate="false">
+        <Type ident="1" name="初次进入游戏"/>
+        <Type ident="2" name="建筑达到等级"/>
+        <Type ident="3" name="初次进入场景"/>
+        <Type ident="4" name="打败某NPC"/>
+        <Type ident="5" name="初次迁移"/>
+        <Type ident="6" name="初次战斗失败"/>
+        <Type ident="7" name="打败某试炼塔NPC"/>
+    </Guide>
+    <Scene name="场景" translate="false">
+        <Type ident="1" name="主城"/>
+        <Type ident="2" name="地区"/>
+        <Type ident="3" name="副本"/>
+        <Type ident="4" name="世界"/>
+        <Type ident="5" name="资源"/>
+        <Type ident="7" name="试炼塔"/>
+        <Type ident="8" name="国战"/>
+        <Type ident="9" name="国政"/>
+        <Type ident="10" name="擂台"/>
+        <Type ident="11" name="掠夺"/>
+        <Type ident="12" name="选角色"/>
+        <Type ident="13" name="武魂"/>
+        <Type ident="14" name="活动副本"/>
+        <Type ident="15" name="海运"/>
+        <Type ident="16" name="海港"/>
+        <Type ident="17" name="海战副本"/>
+        <Type ident="25" name="吞食天地（城内）"/>
+        <Type ident="24" name="吞食天地（大地图）"/>
+        <Type ident="27" name="选择势力"/>
+        <Type ident="28" name="砸罐界面"/>
+        <Type ident="21" name="城池争夺战"/>
+        <Type ident="30" name="军团界面"/>
+        <Type ident="31" name="精英副本"/>
+    </Scene>
+    <Season name="季节" translate="true">
+        <Type ident="0" name="春"/>
+        <Type ident="1" name="夏"/>
+        <Type ident="2" name="秋"/>
+        <Type ident="3" name="冬"/>
+    </Season>
+    <ChatChannel name="聊天频道" translate="true">
+        <Type ident="0" name="系统" tab="系统"/>
+        <Type ident="1" name="全服" tab="全部"/>
+        <Type ident="2" name="国家" tab="国家"/>
+        <Type ident="3" name="军团" tab="军团"/>
+        <Type ident="4" name="地区" tab="地区"/>
+        <Type ident="5" name="私聊" tab="私聊"/>
+        <Type ident="10" name="势力" tab="势力"/>
+    </ChatChannel>
+    <General name="武将类型" translate="false">
+        <Type ident="1" name="初始可选择"/>
+        <Type ident="2" name="威望将"/>
+        <Type ident="3" name="其他"/>
+        <Type ident="4" name="可招募NPC"/>
+        <Type ident="5" name="试炼塔点将"/>
+        <Type ident="6" name="孩子武将男"/>
+        <Type ident="7" name="孩子武将女"/>
+    </General>
+    <OfficialFunction name="官职开放功能 " translate="true">
+        <Type ident="1" name="招募武将数量"/>
+        <Type ident="2" name="属臣数量"/>
+        <Type ident="3" name="占田数量"/>
+        <Type ident="4" name="占矿数量"/>
+    </OfficialFunction>
+    <BattleRank name="战斗评价" translate="false">
+        <Type iconClass="QT003" ident="1" name="SSS" textIconId="3114"/>
+        <Type iconClass="QT004" ident="2" name="SS" textIconId="3115"/>
+        <Type iconClass="QT005" ident="3" name="S" textIconId="3116"/>
+        <Type iconClass="QT006" ident="4" name="A" textIconId="3117"/>
+        <Type iconClass="QT007" ident="5" name="B" textIconId="3118"/>
+        <Type iconClass="QT008" ident="6" name="C" textIconId="3243"/>
+        <Type iconClass="QT009" ident="7" name="D" textIconId="3244"/>
+        <Type iconClass="QT010" ident="8" name="E"/>
+        <Type iconClass="QT011" ident="9" name="F"/>
+    </BattleRank>
+    <CityIcon name="玩家城池图标" translate="false">
+        <Type icon="MapIcon/AreaIcon/qycc_0_1.swf" ident="1" name="1号图标"/>
+        <Type icon="MapIcon/AreaIcon/qycc_0_2.swf" ident="2" name="2号图标"/>
+        <Type icon="MapIcon/AreaIcon/qycc_0_3.swf" ident="3" name="3号图标"/>
+        <Type icon="MapIcon/AreaIcon/qycc_0_4.swf" ident="4" name="4号图标"/>
+        <Type icon="MapIcon/AreaIcon/qycc_0_5.swf" ident="5" name="5号图标"/>
+    </CityIcon>
+    <Position name="军团职位" translate="true">
+        <Type color="0x9859ff" harvestCount="10" ident="0" lowRank="1" name="军团长" right="1,2,3,5,6,7,8,9,10,11,12,13"/>
+        <Type color="0x9859ff" harvestCount="9" ident="1" lowRank="2" name="副军团长" right="1,2,4,5,6,7,8,9,10,11,12,13"/>
+        <Type color="0xff5226" harvestCount="8" ident="2" lowRank="7" name="督军" right="4,5,6,7,13"/>
+        <Type color="0xFFFF00" harvestCount="7" ident="3" lowRank="15" name="万夫长" right="4,5,6"/>
+        <Type color="0x66ff33" harvestCount="6" ident="4" lowRank="30" name="千夫长" right="4,5,6"/>
+        <Type color="0x33ccff" harvestCount="5" ident="5" lowRank="50" name="百夫长" right="4,5,6"/>
+        <Type color="0xFFFFFF" harvestCount="4" ident="6" lowRank="100" name="伍长" right="4,5,6"/>
+        <Type color="0xFFFFFF" harvestCount="4" ident="7" lowRank="-1" name="普通成员" right="4,5,6"/>
+    </Position>
+    <Country name="国家" translate="true">
+        <Type chooseColor="0xffff66" chooseName="听天由命" icon="MapIcon/WorldIcon/sjcc04.swf" ident="0" name="中立" shortName=" " spyIconClass="" textIconId="8010" warIcon="MapIcon/WarWorldIcon/a50.png" warSoldierType=""/>
+        <Type chooseColor="0x54930f" chooseName="蜀国" icon="MapIcon/WorldIcon/sjcc02.swf" ident="1" name="蜀国" shortName="蜀" spyIconClass="GZ023" textIconId="8008" warIcon="MapIcon/WarWorldIcon/a53.png" warSoldierType="2"/>
+        <Type chooseColor="0xe16f05" chooseName="吴国" icon="MapIcon/WorldIcon/sjcc01.swf" ident="2" name="吴国" shortName="吴" spyIconClass="GZ021" textIconId="8009" warIcon="MapIcon/WarWorldIcon/a52.png" warSoldierType="0"/>
+        <Type chooseColor="0x83b8e5" chooseName="魏国" icon="MapIcon/WorldIcon/sjcc03.swf" ident="3" name="魏国" shortName="魏" spyIconClass="GZ022" textIconId="8007" warIcon="MapIcon/WarWorldIcon/a51.png" warSoldierType="1"/>
+    </Country>
+    <WorldObject name="世界地图对象" translate="true">
+        <Type iconId="" ident="1" name="城池"/>
+        <Type icon="MapIcon/WorldIcon/sj02.swf" ident="2" name="农田"/>
+        <Type icon="MapIcon/WorldIcon/sj03.swf" ident="3" name="银矿"/>
+        <Type icon="MapIcon/WorldIcon/sjcc05.swf" ident="4" name="武魁高塔"/>
+        <Type icon="MapIcon/WorldIcon/sjcc05.swf" ident="5" name="精英副本入口"/>
+    </WorldObject>
+    <Feature name="城池特色" translate="true">
+        <Type ident="0" name="普通" tooltip="无任何特点"/>
+        <Type ident="1" name="政治" tooltip="无法被占领"/>
+        <Type ident="2" name="军事" tooltip="对战兵力损失减少20%"/>
+        <Type ident="3" name="贸易" tooltip="通商收益提升10%"/>
+        <Type ident="4" name="良田" tooltip="农田收获增加50%"/>
+        <Type ident="5" name="富矿" tooltip="银矿收获增加50%"/>
+        <Type ident="6" name="商都" tooltip="140%开发效果"/>
+        <Type ident="7" name="文化中心" tooltip="各国玩家都可迁入，但不可被攻击"/>
+    </Feature>
+    <CountryState name="国家状态" translate="true">
+        <Type ident="1" name="同盟"/>
+        <Type ident="0" name="敌对"/>
+    </CountryState>
+    <CityState name="城池状态" translate="true">
+        <Type ident="1" name="开放中"/>
+        <Type ident="0" name="关闭中"/>
+    </CityState>
+    <Building name="建筑" translate="true">
+        <Type ident="0" name="主城" tooltipId="building.mainCity"/>
+        <Type ident="1" name="银库" tooltipId="building.coinStore"/>
+        <Type ident="2" name="粮仓" tooltipId="building.barn"/>
+        <Type ident="3" name="账房" tooltipId="building.accountOffice"/>
+        <Type ident="4" name="冶炼厂" tooltipId="building.mint"/>
+        <Type ident="5" name="钱庄" tooltipId="building.bank"/>
+        <Type ident="6" name="校场" tooltipId="building.ground"/>
+        <Type ident="7" name="兵营" tooltipId="building.camp"/>
+        <Type ident="8" name="策略府" tooltipId="building.military"/>
+        <Type ident="9" name="商铺" tooltipId="building.shop"/>
+        <Type ident="10" name="市场" tooltipId="building.market"/>
+        <Type ident="11" name="商社" tooltipId="building.dak"/>
+        <Type ident="12" name="民居" tooltipId="building.house"/>
+        <Type ident="13" name="作坊" tooltipId="building.workshop"/>
+        <Type ident="14" name="农田" tooltipId="building.field"/>
+        <Type ident="15" name="试炼塔" tooltipId="building.trialstower"/>
+        <Type ident="16" name="狩猎森林" tooltipId=""/>
+        <Type ident="17" name="船坞" tooltipId="building.Dock"/>
+        <Type ident="18" name="水师堂" tooltipId="building.navyhall"/>
+        <Type ident="19" name="城墙"/>
+        <Type ident="20" name="灯塔" tooltipId="building.Lighthouse"/>
+        <Type ident="21" name="商货码头" tooltipId="building.cargowharf"/>
+        <Type ident="22" name="仓库" tooltipId="building.Warehouse"/>
+        <Type ident="23" name="水军校场" tooltipId="building.Navyground"/>
+        <Type ident="24" name="商都" tooltipId="building.mallCenter"/>
+    </Building>
+    <Soldier name="兵种" translate="true">
+        <Type file="TZ01" flagIconId="19033" ident="1" name="步兵" shortName="步"/>
+        <Type file="TZ02" flagIconId="19036" ident="2" name="枪兵" shortName="枪"/>
+        <Type file="TZ03" flagIconId="19035" ident="3" name="骑兵" shortName="骑"/>
+        <Type file="TZ04" flagIconId="19034" ident="4" name="弓兵" shortName="弓"/>
+        <Type file="TZ05" flagIconId="19037" ident="5" name="文官" shortName="术"/>
+        <Type file="TZ06" flagIconId="19034" ident="6" name="小船" shortName="小"/>
+        <Type file="TZ07" flagIconId="19035" ident="7" name="中船" shortName="中"/>
+        <Type file="TZ08" flagIconId="19033" ident="8" name="大船" shortName="大"/>
+    </Soldier>
+    <FillSoldier name="士兵排列位置与填充顺序" translate="false">
+        <Type fillOrder="5,4,8,6,2,7,1,9,3" hgap="42" ident="1" name="整齐" offsets="0,0,10,0,20,0" soldierHeight="46" soldierWidth="46" vgap="27"/>
+        <Type fillOrder="5,4,8,6,2,7,1,9,3" hgap="42" ident="2" name="中间错开" offsets="0,0,20,0,10,0" soldierHeight="46" soldierWidth="46" vgap="27"/>
+        <Type fillOrder="5" hgap="0" ident="3" name="Boss" offsets="0,0,22,-30,160,0" soldierHeight="120" soldierWidth="100" vgap="0"/>
+        <Type center="75,50" fillOrder="5" hgap="0" ident="4" name="神兽" offsets="0,0,75,40,256,0" soldierHeight="210" soldierWidth="256" vgap="0"/>
+    </FillSoldier>
+    <SkillTarget name="技能施放对象" translate="false">
+        <Type ident="1" name="单体敌将" target="1" tooltip="水平方向面对的第一个敌将"/>
+        <Type ident="2" name="直线敌将" target="1" tooltip="水平方向所有敌将"/>
+        <Type ident="3" name="所有敌将" target="1" tooltip="所有敌将"/>
+        <Type ident="4" name="横排敌将" target="1" tooltip="水平方向面对的第一个敌人的垂直方向上所有敌将"/>
+        <Type ident="5" name="单体敌后方" target="1" tooltip="水平方向面对的最后的敌将"/>
+        <Type ident="6" name="自己" target="0" tooltip="当前行动的武将"/>
+        <Type ident="7" name="我方武将" target="0" tooltip="所有己方武将"/>
+        <Type ident="8" name="队友" target="0" tooltip="除了行动的武将外的所有己方武将"/>
+        <Type ident="9" name="随机队友" target="0" tooltip="出场的任意一个己方武将"/>
+        <Type ident="10" name="敌我双方所有人" target="2" tooltip="此次战斗的所有武将"/>
+        <Type ident="11" name="敌我双方所有人不包自己" target="2" tooltip="除了行动的武将外的所有武将"/>
+        <Type ident="12" name="单体敌人和自己" target="2" tooltip="水平方向上面对的第一个敌将和自己"/>
+        <Type ident="13" name="攻击兵力最少的目标" target="1" tooltip="攻击对方兵力百分比最少的目标。"/>
+        <Type ident="14" name="攻击士气最高的目标" target="1" tooltip="攻击对方士气最高的目标。"/>
+        <Type ident="15" name="我方兵力最少目标" target="0" tooltip="攻击我方兵力百分比最少的目标。"/>
+        <Type ident="16" name="我方士气最高目标" target="0" tooltip="攻击我方士气最高的目标。"/>
+        <Type ident="17" name="随机一个敌方目标" target="1" tooltip="随机一个敌方目标。"/>
+    </SkillTarget>
+    <Buff name="技能效果" translate="true">
+        <Type iconClass="" ident="0" isBuff="1" name="排扰" tooltip="消除对象身上的所有BUFF"/>
+        <Type buffIcon="TX015_01.png" iconClass="TX015" ident="1" isBuff="0" name="中毒" tooltip="中毒的武将每回合都会自动扣除一定血量"/>
+        <Type buffIcon="TX012_01.png" iconClass="TX012" ident="2" isBuff="0" name="混乱" tooltip="1回合无法行动"/>
+        <Type buffIcon="TX013_01.png" iconClass="TX013" ident="3" isBuff="1" name="密集防御" tooltip="让对象无视所有伤害1回合"/>
+        <Type buffIcon="TX033_01.png" iconClass="TX033" ident="4" isBuff="1" name="天神守护" tooltip="增加对象的普通防御能力20%"/>
+        <Type buffIcon="TX031_01.png" iconClass="TX031" ident="5" isBuff="1" name="会心" tooltip="提升对象的暴击率20%"/>
+        <Type buffIcon="TX032_01.png" iconClass="TX032" ident="6" isBuff="1" name="反击" tooltip="提升对象的反击率20%"/>
+        <Type buffIcon="TX034_01.png" iconClass="TX034" ident="7" isBuff="0" name="辱骂" tooltip="对象在BUFF状态下，士气无法增加"/>
+        <Type buffIcon="TX091_01.png" iconClass="tx091" ident="8" isBuff="0" name="降低15%兵力" tooltip="对象每回合降低当前15%的兵力"/>
+        <Type buffIcon="TX050_01.png" iconClass="TX050" ident="9" isBuff="1" name="增加物攻" tooltip="增加对象的物理攻击力25%"/>
+        <Type buffIcon="TX051_01.png" iconClass="TX051" ident="10" isBuff="1" name="增加战攻" tooltip="增加对象的战法攻击力25%"/>
+        <Type buffIcon="TX052_01.png" iconClass="TX052" ident="11" isBuff="1" name="增加策攻" tooltip="增加对象的计策攻击力25%"/>
+        <Type buffIcon="TX053_01.png" iconClass="TX053" ident="12" isBuff="1" name="增加所有攻击" tooltip="增加对象的所有攻击力10%"/>
+        <Type buffIcon="TX054_01.png" iconClass="TX054" ident="13" isBuff="0" name="降低物攻" tooltip="降低对象的物理攻击力25%"/>
+        <Type buffIcon="TX055_01.png" iconClass="TX055" ident="14" isBuff="0" name="降低战攻" tooltip="降低对象的战法攻击力25%"/>
+        <Type buffIcon="TX056_01.png" iconClass="TX056" ident="15" isBuff="0" name="降低策攻" tooltip="降低对象的计策攻击力25%"/>
+        <Type buffIcon="TX057_01.png" iconClass="TX057" ident="16" isBuff="0" name="降低所有攻击" tooltip="降低对象的所有攻击力10%"/>
+        <Type buffIcon="TX058_01.png" iconClass="TX058" ident="17" isBuff="0" name="锁兵" tooltip="兵力无法增加"/>
+        <Type buffIcon="TX023_01.png" iconClass="TX023" ident="101" isBuff="1" name="反击"/>
+        <Type buffIcon="TX024_01.png" iconClass="TX024" ident="102" isBuff="1" name="暴击"/>
+        <Type buffIcon="TX026_01.png" iconClass="TX026" ident="103" isBuff="1" name="满士气"/>
+        <Type buffIcon="TX088_01.png" iconClass="tx088" ident="18" isBuff="0" name="降低普防" tooltip="降低对象普通防御能力"/>
+        <Type buffIcon="TX089_01.png" iconClass="tx089" ident="19" isBuff="0" name="降低战防" tooltip="降低对象普通战法防御能力"/>
+        <Type buffIcon="TX090_01.png" iconClass="tx090" ident="20" isBuff="0" name="降低法防" tooltip="降低对象计策防御能力"/>
+        <Type buffIcon="TX091_01.png" iconClass="tx091" ident="21" isBuff="0" name="降低所有防御" tooltip="降低对象所有防御能力"/>
+        <Type buffIcon="TX092_01.png" iconClass="tx092" ident="22" isBuff="0" name="烧伤" tooltip="持续计策伤害"/>
+        <Type buffIcon="TX093_01.png" iconClass="tx093" ident="23" isBuff="2" name="免疫" tooltip="有此BUFF，免疫其他BUFF"/>
+        <Type buffIcon="TX057_01.png" iconClass="TX057" ident="24" isBuff="0" name="降士气" tooltip="对象在BUFF状态下，士气每回合降低。"/>
+        <Type buffIcon="TX105_01.png" iconClass="tx105" ident="25" isBuff="1" name="恢复" tooltip="在该BUFF状态下，每回合恢复士兵。"/>
+        <Type buffIcon="TX106_01.png" iconClass="tx106" ident="26" isBuff="0" name="睡眠" tooltip="在该BUFF状态下，目标单位处于无法攻击，受到任何攻击都会使该BUFF会消失。"/>
+        <Type buffIcon="TX107_01.png" iconClass="tx107" ident="27" isBuff="0" name="控制（符咒）" tooltip="在该BUFF状态下，该单位变为对方使用。"/>
+        <Type buffIcon="TX108_01.png" iconClass="tx108" ident="28" isBuff="1" name="背水一战" tooltip="在该BUFF状态下，降低对象所有防御，提高对象所有攻击伤害。"/>
+        <Type buffIcon="TX104_01.png" iconClass="tx104" ident="29" isBuff="0" name="爆发" tooltip="在该BUFF状态下，对目标造成的伤害会越来越高。"/>
+        <Type buffIcon="TX109_01.png" iconClass="tx109" ident="30" isBuff="0" name="降治疗" tooltip="降低治疗伤害，按百分比"/>
+        <Type buffIcon="TX111_01.png" iconClass="tx111" ident="31" isBuff="1" name="吸血" tooltip="每次攻击敌人都会为自己加血"/>
+        <Type buffIcon="TX112_01.png" iconClass="tx112" ident="32" isBuff="0" name="压抑" tooltip="加士气技能只增加一半。"/>
+        <Type buffIcon="TX113_01.png" iconClass="tx113" ident="33" isBuff="1" name="月魂" tooltip="士气增加不受任何负面影响。"/>
+        <Type buffIcon="TX114_01.png" iconClass="tx114" ident="34" isBuff="0" name="尸毒" tooltip="受到伤害时会把毒传给己方。"/>
+        <Type buffIcon="TX115_01.png" iconClass="tx115" ident="35" isBuff="1" name="激怒" tooltip="受到任何伤害+N士气。"/>
+        <Type buffIcon="TX116_01.png" iconClass="tx116" ident="36" isBuff="1" name="荆棘" tooltip="所受到的按百分比伤害给施术者。"/>
+        <Type buffIcon="TX117_01.png" iconClass="tx117" ident="37" isBuff="1" name="护盾" tooltip="免疫对方1次伤害。"/>
+        <Type buffIcon="TX118_01.png" iconClass="tx118" ident="38" isBuff="1" name="神兵" tooltip="输出伤害均按满兵计算伤害"/>
+        <Type ident="39" isBuff="1" name="夺气" tooltip="抢夺对方士气，为己所用。"/>
+        <Type buffIcon="TX145_01.png" iconClass="tx145" ident="40" isBuff="1" name="添兵" tooltip="额外增加百分比的兵力"/>
+        <Type buffIcon="TX117_01.png" iconClass="tx117" ident="41" isBuff="0" name="冻结" tooltip="有此BUFF时，冰冻（眩晕）N回合，并使该兵种失去彩色。"/>
+        <Type buffIcon="TX148_01.png" iconClass="TX148" ident="42" isBuff="2" name="祛除" tooltip="清除负面效果的黄色BUFF。"/>
+        <Type ident="43" isBuff="1" name="消除" tooltip="一次性清除负面效果的BUFF"/>
+        <Type iconClass="TX032" ident="44" isBuff="1" name="反击风暴" tooltip="反击的进阶版，有此BUFF时，受到任意攻击都会进行反击。"/>
+        <Type buffIcon="TX152_01.png" iconClass="tx152" ident="45" isBuff="1" name="癫狂" tooltip="有此BUFF时，给对方造成的伤害为技能伤害加上对方身上的减益BUFF数量乘以效果值。"/>
+        <Type buffIcon="TX153_01.png" iconClass="tx153" ident="46" isBuff="1" name="净化" tooltip="有此BUFF时，给对方造成的伤害为技能伤害加上对方身上的增益BUFF数量乘以效果值。"/>
+        <Type ident="47" isBuff="2" name="驱散" tooltip="清除对方一次正面的BUFF"/>
+        <Type ident="48" isBuff="2" name="斩杀" tooltip="击杀则恢复士气，未击杀则混乱1回合。"/>
+        <Type iconClass="tx167" ident="49" isBuff="1" name="英勇" tooltip="所有攻击提高，可以累积"/>
+        <Type iconClass="tx168" ident="50" isBuff="1" name="坚守" tooltip="所有防御提高，可以累积"/>
+        <Type buffIcon="TX107_01.png" iconClass="tx107" ident="51" isBuff="3" name="迷惑" tooltip="[貂蝉专用]在该BUFF状态下，该单位变为对方使用。"/>
+        <Type buffIcon="TX174_01.png" iconClass="tx175" ident="52" isBuff="1" name="韧性" tooltip="提高对控制、混乱等效果的抗性，降低被负面BUFF命中的概率。"/>
+        <Type buffIcon="TX175_01.png" iconClass="tx174" ident="53" isBuff="1" name="坚定" tooltip="提高对迷惑效果的抗性，降低被迷惑命中的概率。"/>
+        <Type iconClass="tx178" ident="54" isBuff="2" name="悬赏" tooltip="有此BUFF时，受到带洞察BUFF伤害会增加"/>
+        <Type iconClass="tx190" ident="55" isBuff="2" name="洞察" tooltip="对待悬赏BUFF的目标伤害增加或者减少"/>
+    </Buff>
+    <BuffEffect name="技能效果增益">
+        <Type ident="1" name="减益" value="0"/>
+        <Type ident="2" name="增益" value="1"/>
+        <Type ident="3" name="其他" value="2"/>
+        <Type ident="4" name="迷惑" value="3"/>
+    </BuffEffect>
+    <SkillTargetType name="技能释放对象目标">
+        <Type ident="1" name="自己" value="0"/>
+        <Type ident="2" name="敌人" value="1"/>
+        <Type ident="3" name="其他" value="2"/>
+    </SkillTargetType>
+    <Damage name="伤害类型" translate="false">
+        <Type ident="1" name="普通" type="2"/>
+        <Type ident="2" name="战法" type="3"/>
+        <Type ident="3" name="计策" type="4"/>
+        <Type ident="4" name="加血" type="4"/>
+        <Type ident="5" name="血越少伤害越高的普通攻击" type="2"/>
+        <Type ident="6" name="血越少伤害越高的战法攻击" type="3"/>
+        <Type ident="7" name="血越少伤害越高的计策攻击" type="4"/>
+        <Type ident="8" name="普攻震伤" type="2"/>
+        <Type ident="9" name="战法震伤" type="3"/>
+        <Type ident="10" name="计策震伤" type="4"/>
+        <Type ident="11" name="无伤害" type="1"/>
+        <Type ident="12" name="中毒" type="4"/>
+        <Type ident="13" name="灼烧" type="4"/>
+        <Type ident="14" name="对方血越少受到伤害越高的普攻" type="2"/>
+        <Type ident="15" name="对方血越少受到伤害越高的战攻" type="3"/>
+        <Type ident="16" name="对方血越少受到伤害越高的策攻" type="4"/>
+        <Type ident="17" name="对方当前兵力越多，伤害越高的普攻。"/>
+        <Type ident="18" name="对方当前兵力越多，伤害越高的战攻。"/>
+        <Type ident="19" name="对方当前兵力越多，伤害越高的策攻。"/>
+    </Damage>
+    <Npc name="NPC类型" translate="true">
+        <Type ident="0" name="隐藏副本"/>
+        <Type disabledIconId="7012" iconId="7013" ident="1" name="普通部队" passedIconId="7013" seaDisIconId="7045" seaIconId="7039" seaPassedIconId="7040"/>
+        <Type disabledIconId="7012" iconId="7011" ident="2" name="精英部队" passedIconId="7011" seaDisIconId="7045" seaIconId="7043" seaPassedIconId="7044"/>
+        <Type disabledIconId="7012" iconId="7010" ident="3" name="主将部队" passedIconId="7010" seaDisIconId="7045" seaIconId="7041" seaPassedIconId="7042"/>
+        <Type disabledIconId="7015" iconId="7014" ident="4" name="精英军团" passedIconId="7014" seaDisIconId="7046" seaIconId="7047" seaPassedIconId="7048"/>
+    </Npc>
+    <Rate name="掉落机率" translate="true">
+        <Type ident="0" max="0.001" min="0" name="微乎其微"/>
+        <Type ident="1" max="0.01" min="0.001" name="极低"/>
+        <Type ident="2" max="0.05" min="0.01" name="低"/>
+        <Type ident="3" max="0.1" min="0.05" name="较低"/>
+        <Type ident="4" max="0.25" min="0.1" name="一般"/>
+        <Type ident="5" max="0.4" min="0.25" name="较高"/>
+        <Type ident="6" max="1" min="0.4" name="极高"/>
+    </Rate>
+    <Team name="组队模式 " translate="true">
+        <Type ident="1" name="无限制"/>
+        <Type ident="2" name="相同国家"/>
+        <Type ident="3" name="相同军团"/>
+    </Team>
+    <Effect name="属性影响类型" translate="true">
+        <Type ident="1" name="物理攻击"/>
+        <Type ident="2" name="物理防御"/>
+        <Type ident="3" name="计策攻击"/>
+        <Type ident="4" name="计策防御"/>
+        <Type ident="5" name="战法攻击"/>
+        <Type ident="6" name="战法防御"/>
+        <Type ident="7" name="带兵量"/>
+        <Type ident="8" name="暴击率"/>
+        <Type ident="9" name="反击率"/>
+        <Type ident="10" name="减伤百分比"/>
+        <Type display="物理攻击" ident="11" name="物理攻击(百分比)"/>
+        <Type display="物理防御" ident="12" name="物理防御(百分比)"/>
+        <Type display="计策攻击" ident="13" name="计策攻击(百分比)"/>
+        <Type display="计策防御" ident="14" name="计策防御(百分比)"/>
+        <Type display="战法攻击" ident="15" name="战法攻击(百分比)"/>
+        <Type display="战法防御" ident="16" name="战法防御(百分比)"/>
+        <Type ident="17" name="军团成员人数"/>
+        <Type display="战后伤兵恢复" ident="18" name="战后伤兵恢复(百分比)"/>
+        <Type display="征收值" ident="19" name="征收值(百分比)"/>
+        <Type display="征战战功" ident="20" name="征战战功(百分比)"/>
+        <Type display="世界资源产量" ident="21" name="世界资源产量(百分比)"/>
+        <Type display="征战威望" ident="22" name="征战威望(百分比)"/>
+        <Type display="作坊和贸易收入" ident="23" name="作坊和贸易收入(百分比)"/>
+        <Type ident="24" name="单挑伤害"/>
+        <Type ident="25" name="单挑武力"/>
+        <Type ident="26" name="单挑血量"/>
+        <Type ident="27" name="统率"/>
+        <Type ident="28" name="武力"/>
+        <Type ident="29" name="智力"/>
+        <Type ident="30" name="提升前排防御能力"/>
+        <Type ident="31" name="提升中排进攻能力"/>
+        <Type ident="32" name="加速后排士气速度"/>
+        <Type ident="33" name="统率成长率"/>
+        <Type ident="34" name="武力成长率"/>
+        <Type ident="35" name="智力成长率"/>
+        <Type ident="36" name="无视防御（白虎）"/>
+        <Type ident="37" name="熔炼"/>
+        <Type ident="38" name="资源产出"/>
+        <Type ident="39" name="红颜知己"/>
+        <Type ident="40" name="孩子"/>
+        <Type ident="41" name="军令上限"/>
+        <Type ident="42" name="建筑时间"/>
+    </Effect>
+    <MedalCondition name="勋章条件" translate="false">
+        <Type ident="1" name="单日巡查出现4个NPC"/>
+        <Type ident="2" name="某活动第一名"/>
+        <Type ident="3" name="军团占领资源/城池"/>
+        <Type ident="4" name="在线时长"/>
+        <Type ident="5" name="威望值"/>
+        <Type ident="6" name="战功值"/>
+        <Type ident="7" name="银币值"/>
+        <Type ident="8" name="攻击值"/>
+        <Type ident="9" name="成就总分值"/>
+        <Type ident="10" name="某副本成就分值"/>
+        <Type ident="11" name="单挑出场武力值"/>
+        <Type ident="12" name="单挑出场生命值"/>
+        <Type ident="13" name="单挑出场伤害值"/>
+        <Type ident="14" name="军团贡献值"/>
+        <Type ident="15" name="试炼塔层数"/>
+        <Type ident="16" name="单次熔炼获得分值"/>
+        <Type ident="17" name="单次征收获得银币"/>
+        <Type ident="18" name="获得武将个数"/>
+        <Type ident="19" name="勋章个数"/>
+        <Type ident="20" name="仓库数量"/>
+        <Type ident="21" name="每日任务次数"/>
+        <Type ident="22" name="以至少X兵力征战"/>
+        <Type ident="23" name="军团某科技等级"/>
+        <Type ident="24" name="某商品等级"/>
+        <Type ident="25" name="某装备等级"/>
+        <Type ident="26" name="打败NPC达到评价"/>
+        <Type ident="27" name="任意武将转生次数"/>
+        <Type ident="28" name="攻打紫名敌人次数"/>
+        <Type ident="29" name="征战次数"/>
+        <Type ident="30" name="擂台冠军次数"/>
+        <Type ident="31" name="擂台报名次数"/>
+        <Type ident="32" name="打败某NPC次数"/>
+        <Type ident="33" name="功绩值"/>
+        <Type ident="34" name="主城等级"/>
+        <Type ident="35" name="武将等级"/>
+        <Type ident="36" name="建筑等级"/>
+        <Type ident="37" name="任务完成"/>
+        <Type ident="38" name="武将装备等级  "/>
+        <Type ident="39" name="武将位置  "/>
+        <Type ident="40" name="武将行为  "/>
+        <Type ident="41" name="初始武将等级"/>
+        <Type ident="42" name="初始武将装备等级"/>
+    </MedalCondition>
+    <Formation name="阵型" translate="true">
+        <Type desc="增加部队的普通攻击力" ident="1" name="鱼鳞阵"/>
+        <Type desc="增加部队的普通攻击力" ident="2" name="长蛇阵"/>
+        <Type desc="增加部队的普通防御力" ident="3" name="乱剑阵"/>
+        <Type desc="增加部队的普通防御力" ident="4" name="方圆阵"/>
+        <Type desc="增加部队的战法攻击力" ident="5" name="锋矢阵"/>
+        <Type desc="增加部队的战法防御力" ident="6" name="鹤翼阵"/>
+        <Type desc="增加部队的计策攻击力" ident="7" name="箕行阵"/>
+        <Type desc="增加部队的计策防御力" ident="8" name="雁行阵"/>
+        <Type desc="增加部队的反击概率" ident="9" name="锥行阵"/>
+        <Type desc="增加部队的暴击概率" ident="10" name="虎韬阵"/>
+    </Formation>
+    <Cost name="消耗/奖励" translate="true">
+        <Type ident="0" name="无"/>
+        <Type color="0xffffff" icon="ResType/d34.jpg" icon72="ResType/zabao17.jpg" icon96="ResType/96d34.jpg" ident="1" name="银币"/>
+        <Type color="0xffff00" icon="ResType/d33.jpg" icon96="ResType/96d33.jpg" ident="2" name="金币"/>
+        <Type color="0xffffff" icon="ResType/d38.jpg" icon72="ResType/72d38.jpg" icon96="ResType/96d38.jpg" ident="3" name="战功"/>
+        <Type icon="ResType/SP015.jpg" icon96="ResType/SP015.jpg" ident="4" name="威望"/>
+        <Type ident="5" name="民心"/>
+        <Type ident="6" name="装备"/>
+        <Type ident="7" name="武将"/>
+        <Type ident="8" name="征收CD"/>
+        <Type ident="9" name="征收次数"/>
+        <Type icon="ResType/d46.jpg" icon96="ResType/96d46.jpg" ident="10" name="粮食"/>
+        <Type icon="ResType/96d47.jpg" icon96="ResType/96d47.jpg" ident="11" name="魂晶"/>
+        <Type color="0xffffcc" icon="ResType/meiri02.jpg" icon96="ResType/96meiri02.jpg" ident="12" name="将魂"/>
+        <Type icon="ResType/SP016.jpg" icon96="ResType/SP016.jpg" ident="13" name="试炼令"/>
+        <Type icon="ResType/SP017.jpg" icon96="ResType/SP017.jpg" ident="14" name="军令"/>
+        <Type color="0x9900FF" icon="ResType/meiri05.jpg" icon96="ResType/96meiri05.jpg" ident="15" name="紫色龙玉"/>
+        <Type color="0xFFCC00" icon="ResType/meiri06.jpg" icon96="ResType/96meiri06.jpg" ident="16" name="橙色龙玉"/>
+        <Type ident="17" name="政绩"/>
+        <Type icon="ResType/WJQH005.png" icon96="ResType/WJQH005.png" ident="18" name="青龙之魂"/>
+        <Type icon="ResType/WJQH006.png" icon96="ResType/WJQH006.png" ident="19" name="玄武之魂"/>
+        <Type icon="ResType/WJQH007.png" icon96="ResType/WJQH007.png" ident="20" name="白虎之魂"/>
+        <Type icon="ResType/WJQH008.png" icon96="ResType/WJQH008.png" ident="21" name="朱雀之魂"/>
+        <Type ident="22" name="喇叭"/>
+        <Type ident="23" name="将器"/>
+        <Type ident="24" name="材料"/>
+        <Type ident="25" name="图纸"/>
+        <Type color="0xffffcc" icon="ResType/meiri03.jpg" icon96="ResType/96meiri03.jpg" ident="26" name="包子"/>
+        <Type color="0xffffcc" icon="ResType/meiri04.jpg" icon96="ResType/96meiri04.jpg" ident="27" name="肉"/>
+        <Type color="0xffffcc" icon="ResType/meiri07.jpg" icon96="ResType/96meiri07.jpg" ident="28" name="酒"/>
+        <Type ident="29" name="攻纹"/>
+        <Type ident="30" name="防纹"/>
+        <Type ident="31" name="兵纹"/>
+        <Type ident="32" name="名品"/>
+        <Type icon="ResType/meiri08.jpg" icon96="ResType/96meiri08.jpg" ident="33" name="军勋"/>
+        <Type ident="34" name="强化消耗"/>
+        <Type ident="35" name="精英副本卡牌"/>
+        <Type icon="ResType/199.jpg" icon96="ResType/96199.jpg" ident="36" name="犒赏令"/>
+        <Type icon="ResType/SP0022_1.jpg" icon96="ResType/SP0022.jpg" ident="37" name="功绩"/>
+        <Type icon="ResType/SP0021.jpg" icon96="ResType/SP0021.jpg" ident="38" name="军粮"/>
+        <Type color="0xffffcc" icon="ResType/SP0018.jpg" icon96="ResType/SP0018.jpg" ident="39" name="珍珠"/>
+        <Type color="0xffffcc" icon="ResType/SP0019.jpg" icon96="ResType/SP0019.jpg" ident="40" name="碧玉杯"/>
+        <Type color="0xffffcc" icon="ResType/SP0020.jpg" icon96="ResType/SP0020.jpg" ident="41" name="金香炉"/>
+        <Type ident="42" name="海鲜盛宴材料"/>
+        <Type color="0xffffcc" icon="ResType/WJQH001.png" icon96="ResType/WJQH001.png" ident="43" name="武将统帅"/>
+        <Type color="0xffffcc" icon="ResType/WJQH002.png" icon96="ResType/WJQH002.png" ident="44" name="武将武力"/>
+        <Type color="0xffffcc" icon="ResType/WJQH003.png" icon96="ResType/WJQH003.png" ident="45" name="武将智力"/>
+        <Type color="0xffffcc" icon="ResType/WJQH004.png" icon96="ResType/WJQH004.png" ident="46" name="武将兵力"/>
+        <Type icon="ResType/SP0023.jpg" icon96="ResType/SP0023.jpg" ident="47" name="银贯"/>
+        <Type ident="48" name="冶炼次数"/>
+        <Type icon="ResType/ZDZY012.jpg" icon96="ResType/ZDZY012.jpg" ident="49" name="游历次数"/>
+        <Type ident="50" name="属性石"/>
+        <Type icon="ResType/d314.png" icon96="ResType/d314.png" ident="51" name="竞技场积分"/>
+        <Type color="0xffffb0" icon="ResType/ZGJY.jpg" icon96="ResType/ZGJY.jpg" ident="52" name="主公经验"/>
+        <Type ident="53" name="技能卡"/>
+        <Type ident="54" name="鲲鹏之魂"/>
+        <Type icon="ResType/meiri09.jpg" icon96="ResType/96meiri09.jpg" ident="55" name="琥珀"/>
+        <Type icon="ResType/meiri10.jpg" icon96="ResType/96meiri10.jpg" ident="56" name="蓝宝石"/>
+        <Type icon="ResType/meiri11.jpg" icon96="ResType/96meiri11.jpg" ident="57" name="琅琊玉"/>
+    </Cost>
+    <EventTypeReward name="事件奖励类型">
+        <Type ident="1" name="觉醒值"/>
+        <Type icon="EventReward/xl042.jpg" ident="2" name="事件觉醒和熟练度增加"/>
+        <Type icon="EventReward/xl042.jpg" ident="3" name="事件消耗减少"/>
+        <Type icon="EventReward/xl042.jpg" ident="4" name="蓝事件必出"/>
+        <Type icon="EventReward/xl042.jpg" ident="5" name="紫事件必出"/>
+        <Type icon="EventReward/xl042.jpg" ident="6" name="赠送修行次数"/>
+    </EventTypeReward>
+    <Tech name="科技类型" translate="true">
+        <Type ident="1" name="玩家科技"/>
+        <Type ident="2" name="军团科技"/>
+        <Type ident="3" name="海战科技"/>
+    </Tech>
+    <Level name="等级限制" translate="true">
+        <Type ident="1" name="玩家主城等级"/>
+        <Type ident="2" name="军团长主城等级"/>
+        <Type ident="3" name="军团等级"/>
+        <Type ident="4" name="武将等级"/>
+        <Type ident="5" name="建筑等级"/>
+    </Level>
+    <Task name="任务类型" translate="true">
+        <Type ident="1" name="征战副本"/>
+        <Type ident="2" name="占领农田"/>
+        <Type ident="3" name="征服玩家"/>
+        <Type ident="4" name="击败敌人"/>
+        <Type ident="5" name="占领银矿"/>
+        <Type ident="6" name="升级装备"/>
+        <Type ident="7" name="征收"/>
+        <Type ident="8" name="消费金币"/>
+        <Type ident="9" name="搬迁城市"/>
+        <Type ident="10" name="训练武将"/>
+        <Type ident="11" name="粮食买卖"/>
+        <Type ident="12" name="城市开发"/>
+        <Type ident="13" name="升级建筑"/>
+        <Type ident="14" name="通过副本"/>
+        <Type ident="15" name="提升官职"/>
+        <Type ident="16" name="加入军团"/>
+        <Type ident="17" name="提升军团"/>
+        <Type ident="18" name="获得道具"/>
+        <Type ident="19" name="武将转生"/>
+        <Type ident="20" name="酒馆"/>
+        <Type ident="21" name="武将转职"/>
+        <Type ident="22" name="招募武将"/>
+        <Type ident="23" name="进入地图"/>
+        <Type ident="24" name="修改留言"/>
+        <Type ident="25" name="修改旗号"/>
+        <Type ident="26" name="发送邮件"/>
+        <Type ident="27" name="征兵"/>
+        <Type ident="28" name="委派"/>
+        <Type ident="29" name="买卖商品"/>
+        <Type ident="30" name="每日任务"/>
+        <Type ident="31" name="通商"/>
+        <Type ident="32" name="兵种重修"/>
+        <Type ident="33" name="占领城市"/>
+        <Type ident="34" name="升级科技"/>
+        <Type ident="35" name="军团捐献"/>
+        <Type ident="36" name="军团战斗"/>
+        <Type ident="37" name="获得军印"/>
+        <Type ident="38" name="获得将器"/>
+        <Type ident="39" name="顿悟武将"/>
+        <Type ident="40" name="铸造装备"/>
+        <Type ident="41" name="获得刻纹"/>
+        <Type ident="42" name="砸罐"/>
+        <Type ident="43" name="狩猎"/>
+        <Type ident="44" name="生产商品"/>
+        <Type ident="45" name="巡查"/>
+        <Type ident="46" name="擂台"/>
+        <Type ident="47" name="加入势力"/>
+        <Type ident="48" name="创建部队"/>
+        <Type ident="49" name="补给连胜"/>
+        <Type ident="50" name="派遣"/>
+        <Type ident="51" name="参加战斗"/>
+        <Type ident="52" name="第二个军营"/>
+        <Type ident="53" name="占领特殊军粮"/>
+        <Type ident="54" name="使用计谋"/>
+        <Type ident="55" name="合成军印"/>
+        <Type ident="56" name="副本龙玉掉落"/>
+        <Type ident="57" name="副本材料"/>
+        <Type ident="58" name="征战获得的战功"/>
+        <Type ident="59" name="资源产量"/>
+        <Type ident="60" name="掠夺资源奖励"/>
+        <Type ident="61" name="城池争夺战"/>
+        <Type ident="62" name="古城探秘"/>
+        <Type ident="63" name="府邸会谈"/>
+        <Type ident="64" name="游历"/>
+    </Task>
+    <Recruit name="招募类型" translate="false">
+        <Type ident="0" name="不可招募"/>
+        <Type ident="1" name="可招募"/>
+        <Type ident="2" name="酒馆招募"/>
+    </Recruit>
+    <Arena name="擂台晋级赛类型" translate="true">
+        <Type ident="0" name="32强赛"/>
+        <Type ident="1" name="16强赛"/>
+        <Type ident="2" name="8强赛"/>
+        <Type ident="3" name="4强赛"/>
+        <Type ident="4" name="半决赛"/>
+        <Type ident="5" name="总决赛"/>
+    </Arena>
+    <Recast name="重铸类型" translate="true">
+        <Type costType="1" ident="0" name="普通重铸" tooltip="重铸强度:1" value="50000"/>
+        <Type costType="2" ident="1" name="青铜重铸" tooltip="重铸强度:2" value="4"/>
+        <Type costType="2" ident="2" name="白银重铸" tooltip="重铸强度:3" value="20"/>
+        <Type costType="2" ident="3" name="黄金重铸" tooltip="重铸强度:4" value="100"/>
+        <Type costType="6" ident="4" name="熔铸 消耗装备" tooltip="重铸强度:4" value="0"/>
+    </Recast>
+    <GM name="gm投诉" translate="true">
+        <Type ident="1" name="提交BUG" selected="0"/>
+        <Type ident="2" name="建议" selected="1"/>
+        <Type ident="3" name="投诉" selected="0"/>
+    </GM>
+    <PayBonus name="充值奖励" translate="false">
+        <Type bonus="5" ident="1" name="100金币" value="100"/>
+        <Type bonus="65" ident="2" name="1000金币" value="1000"/>
+        <Type bonus="90" ident="3" name="2000金币" value="2000"/>
+        <Type bonus="290" ident="4" name="5000金币" value="5000"/>
+        <Type bonus="550" ident="5" name="1W金币" value="10000"/>
+        <Type bonus="1200" ident="6" name="2W金币" value="20000"/>
+        <Type bonus="3800" ident="7" name="5W金币" value="50000"/>
+        <Type bonus="7000" ident="8" name="10W金币" value="100000"/>
+        <Type bonus="15000" ident="9" name="20W金币" value="200000"/>
+        <Type bonus="47000" ident="10" name="50W金币" value="500000"/>
+    </PayBonus>
+    <WarTask name="国战任务" translate="false">
+        <Type ident="1" name="占领城池"/>
+        <Type ident="2" name="攻击敌军"/>
+        <Type ident="3" name="使用技能"/>
+        <Type ident="4" name="攻击城池"/>
+        <Type ident="5" name="窍取情报"/>
+    </WarTask>
+    <RewardType name="奖励分类">
+        <Type ident="0" name="无"/>
+        <Type ident="1" name="装备"/>
+        <Type ident="2" name="刻印"/>
+        <Type ident="3" name="其他"/>
+    </RewardType>
+    <Ability name="孩子-能力">
+        <Type ident="1" name="进攻能力提高{1}%"/>
+        <Type ident="2" name="防御能力提高{1}%"/>
+        <Type ident="3" name="移动冷却时间减少{0}秒"/>
+        <Type ident="4" name="攻击冷却时间减少{0}秒"/>
+        <Type ident="5" name="破坏力提升{0}"/>
+    </Ability>
+    <TemperaType name="孩子-性格" translate="true">
+        <Type ident="1" name="温柔" plus="学习蓝色和紫色卡牌消耗资源减少30%"/>
+        <Type ident="2" name="胆小" plus="触发紫色卡牌概率高20%"/>
+        <Type ident="3" name="睿智" plus="卡牌获得的觉醒值和属性成长+20%"/>
+        <Type ident="4" name="刚烈" plus="翻开卡牌时有概率不消耗次数，品质越高概率越高"/>
+    </TemperaType>
+    <IntimacyType name="孩子-谈话" translate="true">
+        <Type ident="0" name="普通对白" score="15"/>
+        <Type ident="1" name="话不投机" score="16"/>
+        <Type ident="2" name="平淡如水" score="17"/>
+        <Type ident="3" name="相谈甚欢" score="18"/>
+        <Type ident="4" name="秉烛夜谈" score="20"/>
+    </IntimacyType>
+    <ConfidantScene name="孩子-图片" translate="true">
+        <Type icon="ConfidantScene/SJ001.swf" ident="1" name="城南门"/>
+        <Type icon="ConfidantScene/SJ002.swf" ident="2" name="城北门"/>
+        <Type icon="ConfidantScene/SJ003.swf" ident="3" name="客栈"/>
+        <Type icon="ConfidantScene/SJ004.swf" ident="4" name="市集"/>
+        <Type icon="ConfidantScene/SJ005.swf" ident="5" name="乡间"/>
+        <Type icon="ConfidantScene/SJ006.swf" ident="6" name="寺庙"/>
+    </ConfidantScene>
+    <ChildTrain name="孩子-效果">
+        <Type ident="1" name="低效果" rate="0.05" score="3"/>
+        <Type ident="2" name="中效果" rate="0.075" score="4"/>
+        <Type ident="3" name="高效果" rate="0.1" score="5"/>
+    </ChildTrain>
+    <AwakeCard name="孩子-品质">
+        <Type ident="1" name="白" rate="0.6"/>
+        <Type ident="2" name="蓝" rate="0.3"/>
+        <Type ident="3" name="紫" rate="0.1"/>
+        <Type ident="4" name="特殊" rate="0.07"/>
+    </AwakeCard>
+    <ThreeValue name="训练分值">
+        <Type ident="1" maxValue="20" minValue="0" name="薄弱"/>
+        <Type ident="2" maxValue="30" minValue="20" name="较差"/>
+        <Type ident="3" maxValue="40" minValue="30" name="平庸"/>
+        <Type ident="4" maxValue="50" minValue="40" name="勉强"/>
+        <Type ident="5" maxValue="60" minValue="50" name="一般"/>
+        <Type ident="6" maxValue="65" minValue="60" name="尚好"/>
+        <Type ident="7" maxValue="70" minValue="66" name="较好"/>
+        <Type ident="8" maxValue="75" minValue="71" name="可造之才"/>
+        <Type ident="9" maxValue="80" minValue="76" name="优秀"/>
+        <Type ident="10" maxValue="85" minValue="81" name="出色"/>
+        <Type ident="11" maxValue="90" minValue="85" name="出类拔萃"/>
+        <Type ident="12" maxValue="95" minValue="91" name="罕见奇葩"/>
+        <Type ident="13" maxValue="100" minValue="96" name="天造之才"/>
+    </ThreeValue>
+    <ThreeGrowUp name="成长值">
+        <Type ident="1" maxValue="0.2" minValue="0.1" name="绝望"/>
+        <Type ident="2" maxValue="0.4" minValue="0.3" name="全无"/>
+        <Type ident="3" maxValue="0.6" minValue="0.5" name="可悲"/>
+        <Type ident="4" maxValue="0.8" minValue="0.7" name="可惜"/>
+        <Type ident="5" maxValue="1.0" minValue="0.9" name="缺乏"/>
+        <Type ident="6" maxValue="1.2" minValue="1.1" name="一般"/>
+        <Type ident="7" maxValue="1.4" minValue="1.3" name="尚可"/>
+        <Type ident="8" maxValue="1.6" minValue="1.5" name="良好"/>
+        <Type ident="9" maxValue="1.8" minValue="1.7" name="欣慰"/>
+        <Type ident="10" maxValue="2.0" minValue="1.9" name="突出"/>
+        <Type ident="11" maxValue="2.2" minValue="2.1" name="优越"/>
+        <Type ident="12" maxValue="2.4" minValue="2.3" name="不凡"/>
+        <Type ident="13" maxValue="2.6" minValue="2.5" name="卓越"/>
+        <Type ident="14" maxValue="2.8" minValue="2.7" name="惊人"/>
+        <Type ident="15" maxValue="3.0" minValue="2.9" name="罕见"/>
+        <Type ident="16" maxValue="3.1" minValue="3.1" name="奇迹"/>
+    </ThreeGrowUp>
+    <Series name="技能系列">
+        <Type ident="1" name="辅助系"/>
+        <Type ident="2" name="机械系"/>
+        <Type ident="3" name="战法系"/>
+        <Type ident="4" name="计策系"/>
+    </Series>
+    <Hobby name="喜好">
+        <Type ident="1" name="蹴鞠"/>
+        <Type ident="2" name="下棋"/>
+        <Type ident="3" name="划船"/>
+        <Type ident="4" name="赛马"/>
+        <Type ident="5" name="射箭"/>
+        <Type ident="6" name="摔跤"/>
+        <Type ident="7" name="骑马"/>
+        <Type ident="8" name="舞剑"/>
+        <Type ident="9" name="音律"/>
+        <Type ident="10" name="耕作"/>
+        <Type ident="11" name="作画"/>
+        <Type ident="21" name="背书"/>
+    </Hobby>
+    <DetailSeries name="系列分类">
+        <Type ident="1" name="辅助系"/>
+        <Type ident="2" name="机械系"/>
+        <Type ident="3" name="战法系"/>
+        <Type ident="4" name="计策系"/>
+    </DetailSeries>
+    <CityFightChatChannel name="争夺战聊天频道" translate="true">
+        <Type ident="7" name="战场" tab="战场"/>
+        <Type ident="8" name="阵营" tab="阵营"/>
+    </CityFightChatChannel>
+    <TalkType name="对话类型">
+        <Type ident="0" name="红颜对话"/>
+        <Type ident="1" name="妻子对话"/>
+        <Type ident="2" name="赠送名品"/>
+        <Type ident="3" name="孩子出生事件"/>
+        <Type ident="4" name="属性预测事件"/>
+        <Type ident="5" name="选择名字对话"/>
+        <Type ident="6" name="结婚事件对话"/>
+        <Type ident="7" name="选择导师"/>
+        <Type ident="8" name="第一阶段完成"/>
+        <Type ident="9" name="第二阶段完成"/>
+        <Type ident="10" name="怀孕"/>
+        <Type ident="11" name="确定导师"/>
+    </TalkType>
+    <DearType name="亲密度">
+        <Type ident="1" name="冷漠" rank="0"/>
+        <Type ident="2" name="平淡" rank="3"/>
+        <Type ident="3" name="友好" rank="9"/>
+        <Type ident="4" name="喜欢" rank="20"/>
+        <Type ident="5" name="相爱" rank="35"/>
+    </DearType>
+    <CityFacadeType name="城池外观获得条件类型">
+        <Type ident="1" name="每周军勋排行"/>
+        <Type ident="2" name="试练塔排行"/>
+        <Type ident="3" name="战力排行"/>
+        <Type ident="4" name="金币购买"/>
+        <Type ident="5" name="节日活动"/>
+        <Type ident="6" name="等级排行"/>
+        <Type ident="7" name="至尊VIP"/>
+    </CityFacadeType>
+    <VIPChatChannel name="VIP聊天频道" translate="true">
+        <Type ident="9" name="VIP" tab="VIP"/>
+    </VIPChatChannel>
+    <WorldFightType name="世界战场势力">
+        <Type color="0xCCCCCC" icon="势力君主头像" ident="0" name="中立"/>
+        <Type color="0x9900FF" icon="General/WJ335.jpg" ident="1" name="曹操"/>
+        <Type color="0xFF9900" icon="General/WJ148.jpg" ident="2" name="马腾"/>
+        <Type color="0x3399FF" icon="General/WJ269.jpg" ident="3" name="刘备"/>
+        <Type color="0x00CC00" icon="General/WJ107.jpg" ident="4" name="刘表"/>
+        <Type color="0xFF0000" icon="General/WJ202.jpg" ident="5" name="孙权"/>
+        <Type color="0xFFF800" icon="General/WJ173.jpg" ident="6" name="袁绍"/>
+    </WorldFightType>
+    <WorldFightStatusType name="世界战场受伤状态">
+        <Type ident="0" name="健康"/>
+        <Type ident="1" name="轻伤"/>
+        <Type ident="2" name="受伤"/>
+        <Type ident="2" name="重伤"/>
+    </WorldFightStatusType>
+    <WorldFightYield name="资源产量" translate="false">
+        <Type icon="MapIcon/WorldFightResIcon/SZ01.swf" ident="101" name="1级农田"/>
+        <Type icon="MapIcon/WorldFightResIcon/SZ02.swf" ident="102" name="2级农田"/>
+        <Type icon="MapIcon/WorldFightResIcon/SZ03.swf" ident="103" name="3级农田"/>
+        <Type icon="MapIcon/WorldFightResIcon/SZ04.swf" ident="104" name="4级农田"/>
+        <Type icon="MapIcon/WorldFightResIcon/SZ05.swf" ident="105" name="5级农田"/>
+        <Type icon="MapIcon/WorldFightResIcon/SZ06.swf" ident="106" name="6级农田"/>
+    </WorldFightYield>
+    <PlotFunction name="计谋功能" translate="false">
+        <Type ident="1" name="指定城内军营的军粮产量增加{0}%。" value1="100" value2="24"/>
+        <Type ident="2" name="使己方城池城防值+{0}，不能超过城防值上限。" value1="5" value2="75"/>
+        <Type ident="3" name="使出战的所有部队立即到达目的地。"/>
+        <Type ident="4" name="保护军营不被其他玩家占领。" value1="2" value2="2"/>
+        <Type ident="5" name="己方所有武将状态恢复到健康状态。"/>
+        <Type ident="6" name="敌方城池城防值-{0}点。" value1="5" value2="75"/>
+        <Type ident="7" name="无视保护强行攻打己方势力城内的任意一座军营。"/>
+        <Type ident="8" name="夺取敌方城池的{0}军粮。" value1="1000"/>
+        <Type ident="9" name="减缓敌对势力行军速度，使其派遣时间延长{0}分钟。"/>
+        <Type ident="10" name="使目标城池内的敌方军队无法派遣出该城池。"/>
+        <Type ident="11" name="使目标城池不受任何负面计谋影响。"/>
+        <Type ident="12" name="每次战胜获得额外{0}点功绩，并且会让对方主将受伤。" value1="10"/>
+        <Type ident="13" name="己方所有部队连胜次数+{0}，连胜次数上限+{1}。" value1="2" value2="2"/>
+        <Type ident="14" name="使出战的部队的主将属性增加{0}%，最少增加{1}点。" value1="50" value2="50"/>
+        <Type ident="15" name="持续时间内，战斗获得的功绩+{0}%。" value1="20"/>
+        <Type ident="16" name="持续时间内，战败的武将不会受伤。"/>
+        <Type ident="17" name="获得{0}功绩。" value1="150"/>
+        <Type ident="18" name="攻击城墙时造成{0}倍伤害，并且获得{1}倍功绩。"/>
+        <Type ident="19" name="己方所有部队连胜次数+{0}，连胜次数上限+{1}。"/>
+    </PlotFunction>
+    <PlotType name="计谋类型" translate="true">
+        <Type ident="1" name="战略"/>
+        <Type ident="2" name="战斗"/>
+        <Type ident="3" name="其他"/>
+    </PlotType>
+    <ChallengerTalkType name="古城探秘挑战者对话类型" translate="true">
+        <Type ident="1" name="哼，真是不堪一击的对手，给我闪到一边去。"/>
+        <Type ident="2" name="竟然来迟一步，这个宝物是我的！"/>
+        <Type ident="3" name="放开那宝箱！"/>
+        <Type ident="4" name="这宝物我要了，识相就让开吧！"/>
+        <Type ident="5" name="这些宝物是我的，想要就凭实力来拿吧！"/>
+        <Type ident="6" name="不要和我争，不然你会死的很惨！"/>
+    </ChallengerTalkType>
+    <AncientNpctalkType name="古城探秘NPC对话类型" translate="true">
+        <Type ident="1" name="又来了一只肥羊，留下命或财，你选吧，嘿嘿嘿！"/>
+        <Type ident="2" name="你们也是来和我争抢财宝的？"/>
+        <Type ident="3" name="你打搅到我们的休息了！"/>
+        <Type ident="4" name="发现入侵者，自动攻击。"/>
+        <Type ident="5" name="好久没有看到陌生人了，真是鲜活的生命啊，嚯嚯嚯。"/>
+        <Type ident="6" name="凡人，这里不是你们可以踏足的地方，速速离去！"/>
+        <Type ident="7" name="咦，竟然有人闯入我的领地？"/>
+    </AncientNpctalkType>
+    <AncientNPCLevel name="古城探秘NPC难度类型" translate="true">
+        <Type color="0xffffff" ident="1" name="弱小"/>
+        <Type color="0x33ccff" ident="2" name="简单"/>
+        <Type color="0x66ff33" ident="3" name="一般"/>
+        <Type color="0xffff00" ident="4" name="困难"/>
+        <Type color="0xff3333" ident="5" name="极难"/>
+        <Type color="0x9900ff" ident="6" name="地狱"/>
+        <Type color="0xff6600" ident="7" name=""/>
+    </AncientNPCLevel>
+    <FindType name="找回类型" translate="true">
+        <Type ident="1" level="40" name="征收次数" text="每日免费征收次数{0}次"/>
+        <Type ident="2" level="40" name="农田次数" text="每日免费农田次数{0}次"/>
+        <Type ident="3" level="60" name="作坊次数" text="每日免费作坊次数{0}次"/>
+        <Type ident="4" level="40" name="酒馆会谈次数" text="每日免费酒馆会谈次数{0}次"/>
+        <Type ident="5" level="40" name="砸罐次数" text="每日免费砸罐次数{0}次"/>
+        <Type ident="6" level="120" name="出航次数" text="每日免费出航次数{0}次"/>
+        <Type ident="7" level="120" name="知己谈话次数" text="每日免费知己会谈次数{0}次"/>
+        <Type ident="8" level="120" name="古城探秘次数" text="每日免费探秘次数{0}次"/>
+        <Type ident="9" level="81" name="城池争夺战次数" text="每日争夺战次数{0}次"/>
+        <Type ident="10" level="125" name="计谋次数" text="每日免费计谋次数{0}次"/>
+        <Type ident="11" level="40" name="每日任务次数" text="每日免费任务次数{0}次"/>
+        <Type ident="12" level="170" name="每日精英次数" text="每日免费精英次数{0}次"/>
+    </FindType>
+    <Invest name="投资" translate="true">
+        <Type effectValue="农田收益增加5%" ident="1" name="农业投资"/>
+        <Type effectValue="银矿收益增加5%" ident="2" name="矿产投资"/>
+        <Type effectValue="征收收益增加5%" ident="3" name="商业投资"/>
+        <Type effectValue="通商收益增加5%" ident="4" name="贸易投资"/>
+        <Type effectValue="攻打副本，攻击力增加5%" ident="5" name="军事投资"/>
+    </Invest>
+    <TavernScene name="酒馆城池" translate="true">
+        <Type icon="TavernScene/a409.swf" ident="1" name="襄平"/>
+        <Type icon="TavernScene/a409.swf" ident="2" name="北平"/>
+        <Type icon="TavernScene/a409.swf" ident="3" name="酥"/>
+        <Type icon="TavernScene/a409.swf" ident="4" name="南皮"/>
+        <Type icon="TavernScene/a409.swf" ident="5" name="晋阳"/>
+        <Type icon="TavernScene/a409.swf" ident="6" name="邺"/>
+        <Type icon="TavernScene/a409.swf" ident="7" name="平原"/>
+        <Type icon="TavernScene/a409.swf" ident="8" name="北海"/>
+        <Type icon="TavernScene/a409.swf" ident="9" name="濮阳"/>
+        <Type icon="TavernScene/a409.swf" ident="10" name="洛阳"/>
+        <Type icon="TavernScene/a409.swf" ident="11" name="陈留"/>
+        <Type icon="TavernScene/a409.swf" ident="12" name="许昌"/>
+        <Type icon="TavernScene/a409.swf" ident="13" name="小沛"/>
+        <Type icon="TavernScene/a409.swf" ident="14" name="下邳"/>
+        <Type icon="TavernScene/a409.swf" ident="15" name="汝南"/>
+        <Type icon="TavernScene/a409.swf" ident="16" name="寿春"/>
+        <Type icon="TavernScene/a409.swf" ident="17" name="新野"/>
+        <Type icon="TavernScene/a409.swf" ident="18" name="襄阳"/>
+        <Type icon="TavernScene/a409.swf" ident="19" name="长安"/>
+        <Type icon="TavernScene/a409.swf" ident="20" name="庐江"/>
+        <Type icon="TavernScene/a409.swf" ident="21" name="建邺"/>
+        <Type icon="TavernScene/a409.swf" ident="22" name="吴"/>
+        <Type icon="TavernScene/a409.swf" ident="23" name="会稽"/>
+        <Type icon="TavernScene/a409.swf" ident="24" name="柴桑"/>
+        <Type icon="TavernScene/a409.swf" ident="25" name="江陵"/>
+        <Type icon="TavernScene/a409.swf" ident="26" name="长沙"/>
+        <Type icon="TavernScene/a409.swf" ident="27" name="桂阳"/>
+        <Type icon="TavernScene/a409.swf" ident="28" name="零陵"/>
+        <Type icon="TavernScene/a409.swf" ident="29" name="武陵"/>
+        <Type icon="TavernScene/a409.swf" ident="30" name="永安"/>
+        <Type icon="TavernScene/a409.swf" ident="31" name="汉中"/>
+        <Type icon="TavernScene/a409.swf" ident="32" name="成都"/>
+        <Type icon="TavernScene/a409.swf" ident="33" name="武威"/>
+        <Type icon="TavernScene/a409.swf" ident="34" name="天水"/>
+        <Type icon="TavernScene/a409.swf" ident="35" name="江州"/>
+        <Type icon="TavernScene/a409.swf" ident="36" name="云南"/>
+        <Type icon="TavernScene/a409.swf" ident="37" name="梓潼"/>
+    </TavernScene>
+    <TavernNpc name="酒馆NPC类型" translate="true">
+        <Type color="0xffffff" ident="1" name="一般人物"/>
+        <Type color="0xff9933" ident="2" name="武将"/>
+        <Type color="0xff0000" ident="3" name="神仙"/>
+        <Type color="0xcc00ff" ident="4" name="后台NPC"/>
+    </TavernNpc>
+    <Scourge name="天灾类型" translate="true">
+        <Type desc="解除灾害后奖励{0}军粮。金币迎击会获得{1}军粮。" effect="QT100" icon="BZ7002.png" ident="1" name="蝗虫之灾"/>
+        <Type desc="解除灾害后奖励{0}功绩。金币迎击会获得{1}功绩。" effect="QT101" icon="BZ7003.png" ident="2" name="山贼之乱"/>
+        <Type desc="解除灾害后奖励{0}功绩和{1}军粮。金币迎击会获得{2}功绩和{3}军粮。" effect="QT102" icon="BZ7004.png" ident="3" name="海盗之祸"/>
+    </Scourge>
+    <ScourgeIntercept name="天灾迎击类型" translate="true">
+        <Type ident="1" name="战争令"/>
+        <Type ident="2" name="金币"/>
+    </ScourgeIntercept>
+    <ScourgeTrigger name="天灾事件触发类型" translate="true">
+        <Type ident="1" name="每日触发"/>
+        <Type ident="2" name="平时触发"/>
+    </ScourgeTrigger>
+    <ShopBuyType name="商店购买类型" translate="true">
+        <Type ident="1" name="银币"/>
+        <Type ident="2" name="金币"/>
+        <Type ident="3" name="积分"/>
+    </ShopBuyType>
+    <SmeltingItem name="冶炼商品品质" translate="true">
+        <Type icon="Economy/YL01.jpg" ident="1" maxLevel="49" minLevel="1" name="铁锭"/>
+        <Type icon="Economy/YL02.jpg" ident="2" maxLevel="99" minLevel="50" name="青铜锭"/>
+        <Type icon="Economy/YL03.jpg" ident="3" maxLevel="149" minLevel="100" name="黄铜锭"/>
+        <Type icon="Economy/YL04.jpg" ident="4" maxLevel="199" minLevel="150" name="银锭"/>
+        <Type icon="Economy/YL05.jpg" ident="5" maxLevel="200" minLevel="200" name="金锭"/>
+    </SmeltingItem>
+    <Face name="表情">
+        <Type ident="10" name="ye" width="22"/>
+        <Type ident="11" name="生气" width="30"/>
+        <Type ident="12" name="晕" width="20"/>
+        <Type ident="13" name="鄙视" width="20"/>
+        <Type ident="14" name="吃惊" width="20"/>
+        <Type ident="15" name="大吼" width="20"/>
+        <Type ident="16" name="大哭" width="27"/>
+        <Type ident="17" name="大笑" width="20"/>
+        <Type ident="18" name="得意" width="20"/>
+        <Type ident="19" name="耳光" width="20"/>
+        <Type ident="20" name="无聊" width="23"/>
+        <Type ident="21" name="尴尬" width="20"/>
+        <Type ident="22" name="恭喜" width="20"/>
+        <Type ident="23" name="怪脸" width="25"/>
+        <Type ident="24" name="害怕" width="21"/>
+        <Type ident="25" name="汗颜" width="22"/>
+        <Type ident="26" name="玫瑰花" width="20"/>
+        <Type ident="27" name="腼腆" width="20"/>
+        <Type ident="28" name="牛" width="24"/>
+        <Type ident="29" name="亲亲" width="20"/>
+    </Face>
+    <ArenaRewardRank name="竞技场排名奖励区间" translate="true">
+        <Type ident="1" max="1" min="1"/>
+        <Type ident="2" max="2" min="2"/>
+        <Type ident="3" max="3" min="3"/>
+        <Type ident="4" max="5" min="4"/>
+        <Type ident="5" max="10" min="6"/>
+        <Type ident="6" max="20" min="11"/>
+        <Type ident="7" max="30" min="21"/>
+        <Type ident="8" max="50" min="31"/>
+        <Type ident="9" max="70" min="51"/>
+        <Type ident="10" max="100" min="71"/>
+        <Type ident="11" max="150" min="101"/>
+        <Type ident="12" max="200" min="151"/>
+        <Type ident="13" max="500" min="201"/>
+        <Type ident="14" max="1000" min="501"/>
+        <Type ident="15" max="2000" min="1001"/>
+        <Type ident="16" max="9999999999" min="2001"/>
+    </ArenaRewardRank>
+    <ArenaRank name="竞技场NPC等阶" translate="true">
+        <Type ident="1" max="10" min="1" name="最强王者"/>
+        <Type ident="2" max="100" min="11" name="钻石"/>
+        <Type ident="3" max="500" min="101" name="白金"/>
+        <Type ident="4" max="1000" min="501" name="黄金"/>
+        <Type ident="5" max="3000" min="1001" name="白银"/>
+        <Type ident="6" max="10000" min="3001" name="青铜"/>
+    </ArenaRank>
+    <SkillType name="技能类型" translate="true">
+        <Type ident="1" name="辅助"/>
+        <Type ident="2" name="普通"/>
+        <Type ident="3" name="战法"/>
+        <Type ident="4" name="计策"/>
+    </SkillType>
+    <EventType name="事件类型" translate="true">
+        <Type ident="1" name="祭拜先祖"/>
+        <Type ident="2" name="治理边城"/>
+        <Type ident="3" name="惩恶安民"/>
+        <Type ident="4" name="深山修炼"/>
+        <Type ident="5" name="游历外域"/>
+        <Type ident="6" name="拜访名师"/>
+    </EventType>
+    <MajestyHeadType name="主公图像获得类型" translate="true">
+        <Type ident="1" name="初始武将"/>
+        <Type ident="2" name="绿将"/>
+        <Type ident="3" name="擂台赛"/>
+        <Type ident="4" name="国王"/>
+    </MajestyHeadType>
+    <EtchQuality name="刻纹品质" translate="true">
+        <Type ident="1" name="刻纹" startLevel="8"/>
+        <Type ident="2" name="刻印"/>
+    </EtchQuality>
+    <TournamentChannel name="跨服团战聊天频道" translate="true">
+        <Type ident="11" name="团队" tab="团队"/>
+    </TournamentChannel>
+    <JugState name="砸罐类型" translate="true">
+        <Type ident="1" name="普通砸罐"/>
+        <Type ident="2" name="高级砸罐"/>
+        <Type ident="3" name="超级砸罐"/>
+    </JugState>
+</Types>
